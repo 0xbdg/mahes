@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        {% block navbar %}{% endblock %}
+        {% block content %}{% endblock %}
+        {% block footer %}{% endblock %}
+    </body>
+</html>
