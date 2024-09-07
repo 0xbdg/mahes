@@ -18,13 +18,13 @@ Go to the project directory
   cd mahes
 ```
 
-Install python library
+Install the Python library dependencies
 
 ```bash
   pip install -r requirements.txt
 ```
 
-Database migration
+Perform database migration
 
 ```bash
   python3 manage.py makemigrations
