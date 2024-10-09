@@ -1,9 +1,216 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block navbar %} {% endblock %}
+{% block title %}Home{% endblock %}
 
-{% block contents %}
-<h1>INDEX</h1>
+{% block navbar %} {% include "components/navbar.html" %}{% endblock %}
+
+{% block content %}
+<section class="dark:bg-gray-100 dark:text-gray-800">
+	<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+		<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+			<img src="{% static 'image/brand.png'%}" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+		</div>
+		<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+			<h1 class="text-5xl font-bold leading-none sm:text-6xl">Mahes
+				<span class="dark:text-violet-600">Metland</span>School
+			</h1>
+			<p class="mt-6 mb-8 text-lg sm:mb-12">Website resmi maheswara maheswari metland school</p>
+			<div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+				<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">Suspendisse</a>
+				<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">Malesuada</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="px-5 py-10 dark:bg-gray-100 dark:text-gray-800">
+	<div class="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
+		<div class="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
+			<div class="flex flex-col space-y-8 md:space-y-12">
+				<div class="flex flex-col space-y-2">
+					<h3 class="flex items-center space-x-2 dark:text-gray-600">
+						<span class="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
+						<span class="text-xs font-bold tracking-wider uppercase">Exclusive</span>
+					</h3>
+					<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Donec sed elit quis odio mollis dignissim eget et nulla.</a>
+					<p class="text-xs dark:text-gray-600">47 minutes ago by
+						<a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Leroy Jenkins</a>
+					</p>
+				</div>
+				<div class="flex flex-col space-y-2">
+					<h3 class="flex items-center space-x-2 dark:text-gray-600">
+						<span class="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
+						<span class="text-xs font-bold tracking-wider uppercase">Exclusive</span>
+					</h3>
+					<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Ut fermentum nunc quis ipsum laoreet condimentum.</a>
+					<p class="text-xs dark:text-gray-600">2 hours ago by
+						<a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Leroy Jenkins</a>
+					</p>
+				</div>
+				<div class="flex flex-col space-y-2">
+					<h3 class="flex items-center space-x-2 dark:text-gray-600">
+						<span class="flex-shrink-0 w-2 h-2 uppercase rounded-full dark:bg-violet-600"></span>
+						<span class="text-xs font-bold tracking-wider uppercase">Exclusive</span>
+					</h3>
+					<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Nunc nec ipsum lobortis, pulvinar neque sed.</a>
+					<p class="text-xs dark:text-gray-600">4 hours ago by
+						<a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Leroy Jenkins</a>
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col w-full space-y-2">
+				<div class="flex w-full h-1 bg-opacity-10 dark:bg-violet-600">
+					<div class="w-1/2 h-full dark:bg-violet-600"></div>
+				</div>
+				<a rel="noopener noreferrer" href="#" class="flex items-center justify-between w-full">
+					<span class="text-xs font-bold tracking-wider uppercase">See more exclusives</span>
+					<svg viewBox="0 0 24 24" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4 stroke-current dark:text-violet-600">
+						<line x1="5" y1="12" x2="19" y2="12"></line>
+						<polyline points="12 5 19 12 12 19"></polyline>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="relative flex col-span-12 dark:bg-gray-500 bg-center bg-no-repeat bg-cover xl:col-span-6 lg:col-span-5 md:col-span-9 min-h-96" style="background-image: url('https://source.unsplash.com/random/239x319');">
+			<span class="absolute px-1 pb-2 text-xs font-bold uppercase border-b-2 left-6 top-6 dark:text-gray-800 dark:border-violet-600">paris, france</span>
+			<a class="flex flex-col items-center justify-end p-6 text-center sm:p-8 group dark:via- flex-grow-1 bg-gradient-to-b dark:from-gray-50 dark:to-gray-50">
+				<span class="flex items-center mb-4 space-x-2 dark:text-violet-600">
+					<span class="relative flex-shrink-0 w-2 h-2 rounded-full dark:bg-violet-600">
+						<span class="absolute flex-shrink-0 w-3 h-3 rounded-full -left-1 -top-1 animate-ping dark:bg-violet-600"></span>
+					</span>
+					<span class="text-sm font-bold">Live</span>
+				</span>
+				<h1 rel="noopener noreferrer" href="#" class="font-serif text-2xl font-semibold group-hover:underline dark:text-gray-800">Morbi mattis justo est, ac consectetur dui eleifend vitae. Donec venenatis?</h1>
+			</a>
+		</div>
+		<div class="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
+			<div class="mb-8 space-x-5 border-b-2 border-opacity-10 dark:border-violet-600">
+				<button type="button" class="pb-5 text-xs font-bold uppercase border-b-2 dark:border-violet-600">Latest</button>
+				<button type="button" class="pb-5 text-xs font-bold uppercase border-b-2 dark:border- dark:text-gray-600">Popular</button>
+			</div>
+			<div class="flex flex-col divide-y dark:divide-gray-300">
+				<div class="flex px-1 py-4">
+					<img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/244x324">
+					<div class="flex flex-col flex-grow">
+						<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Aenean ac tristique lorem, ut mollis dui.</a>
+						<p class="mt-auto text-xs dark:text-gray-600">5 minutes ago
+							<a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Politics</a>
+						</p>
+					</div>
+				</div>
+				<div class="flex px-1 py-4">
+					<img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/245x325">
+					<div class="flex flex-col flex-grow">
+						<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Nulla consectetur efficitur.</a>
+						<p class="mt-auto text-xs dark:text-gray-600">14 minutes ago
+							<a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Sports</a>
+						</p>
+					</div>
+				</div>
+				<div class="flex px-1 py-4">
+					<img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/246x326">
+					<div class="flex flex-col flex-grow">
+						<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Vitae semper augue purus tincidunt libero.</a>
+						<p class="mt-auto text-xs dark:text-gray-600">22 minutes ago
+							<a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">World</a>
+						</p>
+					</div>
+				</div>
+				<div class="flex px-1 py-4">
+					<img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src="https://source.unsplash.com/random/247x327">
+					<div class="flex flex-col flex-grow">
+						<a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Suspendisse potenti.</a>
+						<p class="mt-auto text-xs dark:text-gray-600">37 minutes ago
+							<a rel="noopener noreferrer" href="#" class="block dark:text-blue-600 lg:ml-2 lg:inline hover:underline">Business</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<ul class="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800">
+	<li>
+		<article>
+			<a rel="noopener noreferrer" href="#" class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-50">
+				<h3 class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">Earum at ipsa aliquid quis, exercitationem est.</h3>
+				<time datetime="" class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-600">Oct 13, 2020</time>
+				<p class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe exercitationem numquam, labore necessitatibus deleniti quasi. Illo porro nihil necessitatibus debitis delectus aperiam, fuga impedit assumenda odit, velit eveniet est.</p>
+			</a>
+		</article>
+	</li>
+	<li>
+		<article>
+			<a rel="noopener noreferrer" href="#" class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-50">
+				<h3 class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">Earum at ipsa aliquid quis, exercitationem est.</h3>
+				<time datetime="" class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-600">Oct 13, 2020</time>
+				<p class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe exercitationem numquam, labore necessitatibus deleniti quasi. Illo porro nihil necessitatibus debitis delectus aperiam, fuga impedit assumenda odit, velit eveniet est.</p>
+			</a>
+		</article>
+	</li>
+	<li>
+		<article>
+			<a rel="noopener noreferrer" href="#" class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-50">
+				<h3 class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">Earum at ipsa aliquid quis, exercitationem est.</h3>
+				<time datetime="" class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-600">Oct 13, 2020</time>
+				<p class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe exercitationem numquam, labore necessitatibus deleniti quasi. Illo porro nihil necessitatibus debitis delectus aperiam, fuga impedit assumenda odit, velit eveniet est.</p>
+			</a>
+		</article>
+	</li>
+	<li>
+		<article>
+			<a rel="noopener noreferrer" href="#" class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-50">
+				<h3 class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">Earum at ipsa aliquid quis, exercitationem est.</h3>
+				<time datetime="" class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-600">Oct 13, 2020</time>
+				<p class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe exercitationem numquam, labore necessitatibus deleniti quasi. Illo porro nihil necessitatibus debitis delectus aperiam, fuga impedit assumenda odit, velit eveniet est.</p>
+			</a>
+		</article>
+	</li>
+</ul>
+<section class="py-6 dark:bg-gray-100 dark:text-gray-900">
+	<div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+		<div class="py-6 md:py-0 md:px-6">
+			<h1 class="text-4xl font-bold">Get in touch</h1>
+			<p class="pt-2 pb-4">Fill in the form to start a conversation</p>
+			<div class="space-y-4">
+				<p class="flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+						<path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+					</svg>
+					<span>Fake address, 9999 City</span>
+				</p>
+				<p class="flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+					</svg>
+					<span>123456789</span>
+				</p>
+				<p class="flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+						<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+						<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+					</svg>
+					<span>contact@business.com</span>
+				</p>
+			</div>
+		</div>
+		<form novalidate="" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+			<label class="block">
+				<span class="mb-1">Full name</span>
+				<input type="text" placeholder="Leroy Jenkins" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+			</label>
+			<label class="block">
+				<span class="mb-1">Email address</span>
+				<input type="email" placeholder="leroy@jenkins.com" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+			</label>
+			<label class="block">
+				<span class="mb-1">Message</span>
+				<textarea rows="3" class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+			</label>
+			<button type="button" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
+		</form>
+	</div>
+</section>
 {% endblock %}
 
-{% block footer %}{% endblock %}
+{% block footer %} {% include "components/footer.html" %}{% endblock %}
