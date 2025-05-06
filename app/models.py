@@ -1,12 +1,14 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 from datetime import datetime
+
 # Create your models here.
 
 class Blog(models.Model):
     thumbnail = models.ImageField(upload_to="thumbnail/")
     title = models.CharField(max_length=255, unique=True)
     content = RichTextField()
+    slug = models.SlugField(default="")
     upload_date = models.DateTimeField(auto_now_add=datetime.now())
 
 class Gallery(models.Model):
@@ -20,4 +22,6 @@ class Schedule(models.Model):
     event_date = models.DateField()
 
 class Member(models.Model):
-    pass
+    photo = models.ImageField(upload_to="photo/")
+    name = models.CharField(max_length=255)
+    jabatan = models.CharField(max_length=255)
